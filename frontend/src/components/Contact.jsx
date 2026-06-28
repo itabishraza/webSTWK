@@ -101,7 +101,7 @@ export default function Contact() {
                 </div>
 
                 <span className="text-[#391400] font-medium">
-                  webstwk@gmail.com
+                  webstwk@gmailc.com
                 </span>
               </div>
 
