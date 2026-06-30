@@ -1,4 +1,6 @@
 import React from 'react'
+import FeaturePic  from "../assets/FeaturePic.svg";
+
 
 const Features = () => {
   return (
@@ -72,7 +74,7 @@ const Features = () => {
         {/* Main Card */}
         <div className="relative z-10  flex items-center justify-center">
           <img
-            src="./src/assets/FeaturePic.svg"
+            src={FeaturePic}
             alt="Developer"
             className="w-[420px]"
           />

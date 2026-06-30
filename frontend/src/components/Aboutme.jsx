@@ -1,5 +1,7 @@
 import React from 'react'
 import CountUp from "react-countup";
+import aboutPic from "../assets/aboutPic.svg";
+
 
 const Aboutme = () => {
   return (
@@ -18,7 +20,7 @@ const Aboutme = () => {
 
         {/* Profile Image */}
         <img
-          src="./src/assets/aboutPic.svg"
+          src={aboutPic}
           alt="Tabish Raza"
           className="relative z-10 w-[320px] rounded-2xl shadow-xl"
         />

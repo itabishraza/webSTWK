@@ -1,5 +1,7 @@
 import React from 'react'
 import Iconwhatsapp from './Iconwhatsapp'
+import herosectionlogo from "../assets/herosectionlogo.svg";
+
 
 const Herosection = () => {
   return (
@@ -44,7 +46,7 @@ const Herosection = () => {
       {/* Profile Image */}
       <div className="relative z-10">
         <img
-          src="./src/assets/herosectionlogo.svg"
+          src={herosectionlogo}
           alt="Tabish"
           className="w-[400px] rounded-[50px]"
         />

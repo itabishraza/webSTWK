@@ -1,4 +1,7 @@
 import React from 'react'
+import Doctorproject from "../assets/Doctorproject.png";
+import realtimechatapp from "../assets/realtimechatapp.png";
+
 
 const Portfolio = () => {
   return (
@@ -35,7 +38,7 @@ const Portfolio = () => {
       <div className="group relative overflow-hidden rounded-xl cursor-pointer">
 
         <img
-          src="./src/assets/Doctorproject.png"
+          src={Doctorproject}
           alt="Doctor App"
          className="h-[250px] md:h-[300px] lg:h-[450px] w-full object-cover group-hover:scale-110 transition duration-500"
         />
@@ -57,7 +60,7 @@ const Portfolio = () => {
       <div className="group relative overflow-hidden rounded-xl cursor-pointer">
 
         <img
-          src="./src/assets/realtimechatapp.png"
+          src={realtimechatapp}
           alt="Second Brain"
          className="h-[250px] md:h-[300px] lg:h-[450px] w-full object-cover group-hover:scale-110 transition duration-500"
         />
@@ -79,7 +82,7 @@ const Portfolio = () => {
       <div className="group relative overflow-hidden rounded-xl cursor-pointer">
 
         <img
-          src="./src/assets/realtimechatapp.png"
+          src={realtimechatapp}
           alt="Chat App"
          className="h-[250px] md:h-[300px] lg:h-[450px] w-full object-cover group-hover:scale-110 transition duration-500"
         />

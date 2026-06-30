@@ -1,3 +1,6 @@
+import logostwk from "../assets/logostwk.svg";
+
+
 export default function Navbar() {
   return (
     <nav className="bg-[#22233b] text-white px-10">
@@ -7,7 +10,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
            <div className="flex items-center">
           <img
-               src="./src/assets/logostwk.svg"
+               src={logostwk}
                alt="STWK Logo"
                className="h-28 object-contain"
                />

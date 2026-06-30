@@ -1,4 +1,6 @@
 import React from 'react'
+import person from "../assets/person.jpeg";
+
 
 const Testimonials = () => {
   return (
@@ -37,7 +39,7 @@ const Testimonials = () => {
 
         <div className="flex items-center gap-4">
           <img
-            src="./src/assets/person.jpeg"
+            src={person}
             alt=""
             className="w-14 h-14 rounded-full object-cover"
           />
@@ -69,7 +71,7 @@ const Testimonials = () => {
 
         <div className="flex items-center gap-4">
           <img
-            src="./src/assets/person.jpeg"
+            src={person}
             alt=""
             className="w-14 h-14 rounded-full object-cover"
           />
@@ -101,7 +103,7 @@ const Testimonials = () => {
 
         <div className="flex items-center gap-4">
           <img
-            src="./src/assets/person.jpeg"
+            src={person}
             alt=""
             className="w-14 h-14 rounded-full object-cover"
           />
