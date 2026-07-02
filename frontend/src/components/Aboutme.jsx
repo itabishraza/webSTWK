@@ -1,126 +1,147 @@
-import React from 'react'
+import React from "react";
 import CountUp from "react-countup";
 import aboutPic from "../assets/aboutPic.svg";
 
+import {
+  FaLaptopCode,
+  FaReact,
+  FaRocket,
+  FaDownload,
+} from "react-icons/fa";
 
 const Aboutme = () => {
   return (
-    <div>
-      <section id="about" className="bg-[#F3D1BF] py-24 px-6">
-  <div className="max-w-7xl mx-auto">
+    <section
+      id="about"
+      className="bg-[#F3D1BF] py-16 md:py-24 px-6 md:px-10 lg:px-16"
+    >
+      <div className="max-w-7xl mx-auto">
 
-    {/* Top Section */}
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
+        {/* About */}
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-      {/* Left Image */}
-      <div className="relative flex justify-center">
+          {/* Image */}
+          <div className="flex justify-center">
 
-        {/* Background Shape */}
-        <div className="absolute w-72 h-72 bg-orange-200 rotate-12 rounded-xl"></div>
+            <div className="relative">
 
-        {/* Profile Image */}
-        <img
-          src={aboutPic}
-          alt="Tabish Raza"
-          className="relative z-10 w-[320px] rounded-2xl shadow-xl"
-        />
+              <div className="absolute -top-5 -left-5 w-full h-full bg-[#EF6D58]/20 rounded-3xl"></div>
 
-       
+              <img
+                src={aboutPic}
+                alt="Tabish Raza"
+                className="relative w-[280px] sm:w-[340px] md:w-[420px] rounded-3xl shadow-2xl"
+              />
+
+            </div>
+
+          </div>
+
+          {/* Content */}
+          <div>
+
+            <p className="uppercase tracking-[4px] text-[#EF6D58] text-sm mb-4">
+              About Me
+            </p>
+
+            <h2 className="text-[#391400] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Full Stack
+              <br />
+              Web Developer
+            </h2>
+
+            <p className="mt-6 text-xl font-semibold text-[#391400]">
+              Turning Ideas Into Scalable Web Applications
+            </p>
+
+            <p className="mt-6 text-[#6B4F45] leading-8">
+              I'm <strong>Tabish Raza</strong>, a Full Stack Developer
+              specializing in React.js, Next.js, Node.js, Express.js,
+              MongoDB, and modern web technologies.
+
+              I build fast, scalable, and responsive web applications
+              that help startups and businesses grow online.
+            </p>
+
+            <div className="flex flex-wrap gap-4 mt-10">
+
+              <button className="bg-[#EF6D58] hover:bg-[#d85744] text-white px-8 py-4 rounded-xl transition">
+                Hire Me
+              </button>
+
+              
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
+
+          {/* Card */}
+          <div className="bg-white rounded-2xl p-8 shadow hover:-translate-y-2 transition-all duration-300">
+
+            <div className="w-16 h-16 rounded-full bg-[#EF6D58] text-white flex items-center justify-center text-2xl mb-5">
+              <FaLaptopCode />
+            </div>
+
+            <h3 className="text-4xl font-bold text-[#391400]">
+              <CountUp
+                end={48}
+                duration={3}
+                enableScrollSpy
+                scrollSpyOnce
+              />
+              +
+            </h3>
+
+            <p className="mt-2 text-[#6B4F45]">
+              Projects Completed
+            </p>
+
+          </div>
+
+          {/* Card */}
+          <div className="bg-white rounded-2xl p-8 shadow hover:-translate-y-2 transition-all duration-300">
+
+            <div className="w-16 h-16 rounded-full bg-[#EF6D58] text-white flex items-center justify-center text-2xl mb-5">
+              <FaReact />
+            </div>
+
+            <h3 className="text-4xl font-bold text-[#391400]">
+              MERN
+            </h3>
+
+            <p className="mt-2 text-[#6B4F45]">
+              Stack Expertise
+            </p>
+
+          </div>
+
+          {/* Card */}
+          <div className="bg-white rounded-2xl p-8 shadow hover:-translate-y-2 transition-all duration-300">
+
+            <div className="w-16 h-16 rounded-full bg-[#EF6D58] text-white flex items-center justify-center text-2xl mb-5">
+              <FaRocket />
+            </div>
+
+            <h3 className="text-4xl font-bold text-[#391400]">
+              100%
+            </h3>
+
+            <p className="mt-2 text-[#6B4F45]">
+              Learning Mindset
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
+    </section>
+  );
+};
 
-      {/* Right Content */}
-      <div>
-
-        <p className="text-[#EF6D58] uppercase tracking-[4px] text-sm mb-4">
-          About Me
-        </p>
-
-        <h2 className="text-[#391400] text-4xl md:text-6xl font-bold leading-tight">
-          Full-Stack
-
-          <br />
-          Web Designer    
-        </h2>
-
-        <p className="text-[#391400] font-medium mt-6 text-lg">
-            Turning Ideas Into Scalable Web Applications
-        </p>
-
-        <p className="text-[#6B4F45] mt-4 leading-8">
-          I'm Tabish Raza, a Backend Developer passionate about
-          Node.js, Express.js, MongoDB, React, and Next.js.
-          I enjoy building real-world applications that solve
-          practical problems and deliver great user experiences.
-        </p>
-
-        <button className="mt-8 bg-white px-8 py-4 rounded-lg shadow-md font-semibold hover:shadow-xl transition">
-          About Me
-        </button>
-
-      </div>
-    </div>
-
-    {/* Stats Section */}
-    <div className="mt-20 grid md:grid-cols-3 border border-[#e8c6b2]">
-
-      <div className="p-8 flex items-center gap-6 border-b md:border-b-0 md:border-r border-[#e8c6b2]">
-        <div className="w-16 h-16 bg-[#EF6D58] rounded-full flex items-center justify-center text-2xl">
-          💼
-        </div>
-
-        <div>
-          <h3 className="text-4xl font-bold text-[#391400]">
-           <CountUp
-            start={0}
-            end={48}
-            duration={3}
-            enableScrollSpy
-            scrollSpyOnce
-            />
-             +
-          </h3>
-          <p className="text-[#6B4F45]">
-            Projects Completed
-          </p>
-        </div>
-      </div>
-
-      <div className="p-8 flex items-center gap-6 border-b md:border-b-0 md:border-r border-[#e8c6b2]">
-        <div className="w-16 h-16 bg-[#EF6D58] rounded-full flex items-center justify-center text-2xl">
-          ⚡
-        </div>
-
-        <div>
-          <h3 className="text-4xl font-bold text-[#391400]">
-            MERN
-          </h3>
-          <p className="text-[#6B4F45]">
-            Stack Expertise
-          </p>
-        </div>
-      </div>
-
-      <div className="p-8 flex items-center gap-6">
-        <div className="w-16 h-16 bg-[#EF6D58] rounded-full flex items-center justify-center text-2xl">
-          🚀
-        </div>
-
-        <div>
-          <h3 className="text-4xl font-bold text-[#391400]">
-            100%
-          </h3>
-          <p className="text-[#6B4F45]">
-            Learning Mindset
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-    </div>
-  )
-}
-
-export default Aboutme
+export default Aboutme;

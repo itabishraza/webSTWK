@@ -1,125 +1,131 @@
-import React from 'react'
-import FeaturePic  from "../assets/FeaturePic.svg";
-
+import React from "react";
+import FeaturePic from "../assets/FeaturePic.svg";
 
 const Features = () => {
   return (
-    <div>
-      <section className="bg-[#22233b] py-24 px-6">
-  <div className="max-w-7xl mx-auto">
+    <>
+      {/* Features Section */}
+      <section className="bg-[#22233b] py-16 md:py-24 px-6 md:px-10 lg:px-16">
+        <div className="max-w-7xl mx-auto">
 
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-      {/* Left Side */}
-      <div>
-        <p className="text-[#EF6D58] uppercase tracking-[4px] text-sm mb-4">
-          Features
-        </p>
+            {/* Left Side */}
+            <div>
 
-        <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight">
-          Why Work With Me
-          {/* <br />
-          for Your Next Project */}
-        </h2>
+              <p className="text-[#EF6D58] uppercase tracking-[4px] text-sm mb-4">
+                Features
+              </p>
 
-        <p className="text-gray-400 mt-6 text-lg max-w-lg">
-          I create scalable, responsive and user-friendly
-          web applications that help businesses grow online.
-        </p>
+              <h2 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Why Work With Me
+              </h2>
 
-        <div className="mt-8 space-y-5">
+              <p className="text-gray-400 mt-6 text-base md:text-lg leading-8 max-w-lg">
+                I create scalable, responsive and user-friendly web
+                applications that help businesses grow online.
+              </p>
 
-          <div className="flex items-center gap-4">
-            <div className="w-8 h-8 rounded-full bg-[#EF6D58] flex items-center justify-center">
-              ✓
+              <div className="mt-10 space-y-5">
+
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#EF6D58] flex items-center justify-center text-white shrink-0">
+                    ✓
+                  </div>
+
+                  <p className="text-gray-300 text-base md:text-lg">
+                    Responsive & Modern UI Design
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#EF6D58] flex items-center justify-center text-white shrink-0">
+                    ✓
+                  </div>
+
+                  <p className="text-gray-300 text-base md:text-lg">
+                    Scalable Backend Development
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#EF6D58] flex items-center justify-center text-white shrink-0">
+                    ✓
+                  </div>
+
+                  <p className="text-gray-300 text-base md:text-lg">
+                    REST APIs & Authentication Systems
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#EF6D58] flex items-center justify-center text-white shrink-0">
+                    ✓
+                  </div>
+
+                  <p className="text-gray-300 text-base md:text-lg">
+                    Clean Code & Best Practices
+                  </p>
+                </div>
+
+              </div>
+
             </div>
-            <p className="text-gray-300">
-              Responsive & Modern UI Design
-            </p>
-          </div>
 
-          <div className="flex items-center gap-4">
-            <div className="w-8 h-8 rounded-full bg-[#EF6D58] flex items-center justify-center">
-              ✓
-            </div>
-            <p className="text-gray-300">
-              Scalable Backend Development
-            </p>
-          </div>
+            {/* Right Side */}
+            <div className="flex justify-center">
 
-          <div className="flex items-center gap-4">
-            <div className="w-8 h-8 rounded-full bg-[#EF6D58] flex items-center justify-center">
-              ✓
-            </div>
-            <p className="text-gray-300">
-              REST APIs & Authentication Systems
-            </p>
-          </div>
+              <img
+                src={FeaturePic}
+                alt="Developer"
+                className="w-[260px] sm:w-[320px] md:w-[420px] lg:w-[480px] max-w-full"
+              />
 
-          <div className="flex items-center gap-4">
-            <div className="w-8 h-8 rounded-full bg-[#EF6D58] flex items-center justify-center">
-              ✓
             </div>
-            <p className="text-gray-300">
-              Clean Code & Best Practices
-            </p>
+
           </div>
 
         </div>
-      </div>
+      </section>
 
-      {/* Right Side */}
-      <div className="relative flex justify-center">
+      {/* CTA Section */}
+      <section className="bg-[#dca389] py-14 md:py-16 px-6 md:px-10 lg:px-16">
 
-        {/* Main Card */}
-        <div className="relative z-10  flex items-center justify-center">
-          <img
-            src={FeaturePic}
-            alt="Developer"
-            className="w-[420px]"
-          />
+        <div className="max-w-6xl mx-auto">
+
+          <div className="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10 text-center lg:text-left">
+
+            <div>
+
+              <p className="text-[#EF6D58] uppercase tracking-[4px] text-sm">
+                Get Started
+              </p>
+
+              <h3 className="text-[#391400] text-3xl sm:text-4xl md:text-5xl font-bold mt-4 leading-tight">
+                Let's Build Your
+                <br />
+                Next Project
+              </h3>
+
+              <button className="mt-8 bg-[#EF6D58] text-white px-8 py-4 rounded-lg hover:scale-105 transition duration-300">
+                Contact Me
+              </button>
+
+            </div>
+
+            <p className="text-[#6B4F45] max-w-md text-base md:text-lg leading-8">
+              Whether you need a portfolio website, business website,
+              backend API or a full stack application, I can help
+              bring your ideas to life.
+            </p>
+
+          </div>
+
         </div>
 
-      </div>
+      </section>
+    </>
+  );
+};
 
-    </div>
-
-  </div>
-</section>
-<section className="bg-[#dca389] py-16 px-6">
-  <div className="max-w-6xl mx-auto">
-
-    <div className="bg-[#dca389] rounded-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
-
-      <div>
-        <p className="text-[#EF6D58] uppercase tracking-[4px] text-sm">
-          Get Started
-        </p>
-
-        <h3 className="text-[#391400] text-4xl font-bold mt-4">
-          Let's Build Your
-          <br />
-          Next Project
-        </h3>
-
-        <button className="mt-8 bg-[#EF6D58] text-white px-8 py-4 rounded-lg hover:scale-105 transition">
-          Contact Me
-        </button>
-      </div>
-
-      <p className="text-[#6B4F45] max-w-md">
-        Whether you need a portfolio website,
-        business website, backend API or a full
-        stack application, I can help bring your
-        ideas to life.
-      </p>
-
-    </div>
-
-  </div>
-</section>
-    </div>
-  )
-}
-
-export default Features
+export default Features;
