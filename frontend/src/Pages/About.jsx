@@ -1,6 +1,5 @@
 import React from 'react'
 import AboutBanner from '../components/about/AboutBanner'
-import AboutStory from '../components/about/AboutStory'
 import CompanyStory from '../components/about/CompanyStory'
 import WhyChooseUs from '../components/about/WhyChooseUs'
 import Process from '../components/about/Process'
@@ -17,7 +16,6 @@ const About = () => {
     <div>
       <Navbar/>
       <AboutBanner/>
-      {/* <AboutStory/> */}
       <CompanyStory/>
       <WhyChooseUs/>
       <Process/>
