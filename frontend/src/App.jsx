@@ -1,29 +1,28 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Herosection from './components/Herosection'
-import Service from './components/Service'
-import Portfolio from './components/Portfolio'
-import Aboutme from './components/Aboutme'
-import Features from './components/Features'
-import Testimonials from './components/Testimonials'
-import Faq from './components/Faq'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Service from './Pages/Service'
+import WebDevelopment from './Pages/services/WebDevelopment'
+import WebsiteRedesign from './Pages/services/WebsiteRedesign'
+import WebsiteMaintenance from './Pages/services/WebsiteMaintenance'
+import Projects from './Pages/Projects'
+import Blogs from './Pages/Blogs'
 
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Herosection/>
-      <Service/>
-      <Portfolio/>
-      <Aboutme/>
-      <Features/>
-      <Testimonials/>
-      <Faq/>
-      <Contact/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/about' element={<About/>}/>
+        <Route path='/services' element={<Service/>}/>
+        <Route path="/services/web-development" element={<WebDevelopment/>}/>
+        <Route path="/services/website-redesign" element={<WebsiteRedesign />}/>
+        <Route path="/services/website-maintenance" element={<WebsiteMaintenance />}/>
+        <Route path='/projects' element={<Projects/>}/>
+        <Route path='/blog' element={<Blogs/>}/>
+      </Routes>
     </div>
   )
 }

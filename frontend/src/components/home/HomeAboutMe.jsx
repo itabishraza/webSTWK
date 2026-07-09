@@ -1,6 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
-import aboutPic from "../assets/aboutPic.svg";
+import aboutPic from "../../assets/aboutPic.svg";
 
 import {
   FaLaptopCode,
@@ -9,7 +9,7 @@ import {
   FaDownload,
 } from "react-icons/fa";
 
-const Aboutme = () => {
+const HomeAboutMe = () => {
   return (
     <section
       id="about"
@@ -144,4 +144,4 @@ const Aboutme = () => {
   );
 };
 
-export default Aboutme;
+export default HomeAboutMe;

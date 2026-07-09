@@ -6,7 +6,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-export default function Contact() {
+export default function HomeContact() {
   return (
     <section
       id="contact"
@@ -101,7 +101,7 @@ export default function Contact() {
                 </div>
 
                 <span className="text-[#391400] font-medium">
-                  webstwk@gmailc.com
+                  webstwk@gmail.com
                 </span>
               </div>
 

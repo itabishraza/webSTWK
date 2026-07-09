@@ -25,7 +25,7 @@ const services = [
   },
 ];
 
-const Service = () => {
+const HomeService = () => {
   return (
     <section
       id="services"
@@ -91,4 +91,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default HomeService;

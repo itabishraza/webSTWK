@@ -1,7 +1,7 @@
 import React from "react";
-import FeaturePic from "../assets/FeaturePic.svg";
+import FeaturePic from "../../assets/FeaturePic.svg";
 
-const Features = () => {
+const HomeFeatures = () => {
   return (
     <>
       {/* Features Section */}
@@ -128,4 +128,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default HomeFeatures;

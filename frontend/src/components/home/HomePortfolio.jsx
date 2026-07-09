@@ -1,6 +1,6 @@
 import React from "react";
-import Doctorproject from "../assets/Doctorproject.png";
-import realtimechatapp from "../assets/realtimechatapp.png";
+import Doctorproject from "../../assets/Doctorproject.png";
+import realtimechatapp from "../../assets/realtimechatapp.png";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const projects = [
@@ -24,7 +24,7 @@ const projects = [
   },
 ];
 
-const Portfolio = () => {
+const HomePortfolio = () => {
   return (
     <section
       id="portfolio"
@@ -102,4 +102,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default HomePortfolio;

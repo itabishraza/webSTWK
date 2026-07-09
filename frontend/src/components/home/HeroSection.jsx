@@ -1,8 +1,8 @@
 import React from "react";
-import Iconwhatsapp from "./Iconwhatsapp";
-import herosectionlogo from "../assets/herosectionlogo.svg";
+import Iconwhatsapp from "../common/Iconwhatsapp";
+import herosectionlogo from "../../assets/herosectionlogo.svg";
 
-const Herosection = () => {
+const HeroSection = () => {
   return (
     <section className="min-h-screen bg-[#22233b] text-white flex items-center">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-16 flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
@@ -68,4 +68,4 @@ const Herosection = () => {
   );
 };
 
-export default Herosection;
+export default HeroSection;

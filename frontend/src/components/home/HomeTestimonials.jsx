@@ -1,8 +1,8 @@
 import React from 'react'
-import person from "../assets/person.jpeg";
+import person from "../../assets/person.jpeg";
 
 
-const Testimonials = () => {
+const HomeTestimonials = () => {
   return (
     <div>
       <section id="testimonials" className="bg-[#F3D1BF] py-24 px-6">
@@ -135,4 +135,4 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+export default HomeTestimonials

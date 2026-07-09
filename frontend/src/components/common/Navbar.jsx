@@ -1,6 +1,7 @@
 import { useState } from "react";
-import logostwk from "../assets/logostwk.svg";
+import logostwk from "../../assets/logostwk.svg";
 import { FiMenu, FiX, FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,39 +15,39 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
 
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img
-              src={logostwk}
-              alt="STWK Logo"
-              className="h-20 md:h-28 object-contain"
+             src={logostwk}
+             alt="STWK Logo"
+             className="h-14 md:h-16 object-contain"
             />
 
-            <h1 className="text-2xl md:text-3xl font-space font-bold">
+            <h1 className="text-xl md:text-2xl font-space font-bold">
               webSTWK
             </h1>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-16 text-lg font-inter">
 
             <li>
-              <a
-                href="#about"
+              <Link
+                to="/about"
                 className="hover:text-orange-500 transition"
               >
                 About
-              </a>
+              </Link>
             </li>
 
             {/* Services Dropdown */}
             <li className="relative group">
-              <a
-                href="#services"
+              <Link
+                to="/services"
                 className="flex items-center gap-1 hover:text-orange-500 transition"
               >
                 Services
                 <span className="text-xs">▾</span>
-              </a>
+              </Link>
 
               <div
                 className="absolute left-0 top-full mt-2 w-72
@@ -58,45 +59,45 @@ export default function Navbar() {
                 transition-all duration-300
                 z-50"
               >
-                <a
-                  href="#web-development"
+                <Link
+                  to="/services/web-development"
                   className="block px-5 py-3 hover:bg-orange-500 rounded-t-lg"
                 >
                   🌐 Web Development
-                </a>
+                </Link>
 
-                <a
-                  href="#website-redesign"
+                <Link
+                  to="/services/website-redesign"
                   className="block px-5 py-3 hover:bg-orange-500"
                 >
                   🎨 Website Redesign
-                </a>
+                </Link>
 
-                <a
-                  href="#maintenance"
+                <Link
+                  to="/services/website-maintenance"
                   className="block px-5 py-3 hover:bg-orange-500 rounded-b-lg"
                 >
                   🛠 Website Maintenance
-                </a>
+                </Link>
               </div>
             </li>
 
             <li>
-              <a
-                href="#projects"
+              <Link
+                to="/projects"
                 className="hover:text-orange-500 transition"
               >
                 Projects
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="#blog"
+              <Link
+                to="/blog"
                 className="hover:text-orange-500 transition"
               >
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -121,13 +122,14 @@ export default function Navbar() {
         {menuOpen && (
           <div className="md:hidden mt-4 bg-[#2d2f4b] rounded-xl p-5 space-y-4">
 
-            <a
-              href="#about"
+            <Link
+            
+              to="/about"
               className="block hover:text-orange-500"
               onClick={() => setMenuOpen(false)}
             >
               About
-            </a>
+            </Link>
 
             {/* Mobile Services */}
             <div>
@@ -143,50 +145,50 @@ export default function Navbar() {
               {servicesOpen && (
                 <div className="ml-5 mt-3 space-y-3">
 
-                  <a
-                    href="#web-development"
+                  <Link
+                    to="/services/web-development"
                     className="block hover:text-orange-500"
                     onClick={() => setMenuOpen(false)}
                   >
                     🌐 Web Development
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#website-redesign"
+                  <Link
+                    to="/services/website-redesign"
                     className="block hover:text-orange-500"
                     onClick={() => setMenuOpen(false)}
                   >
                     🎨 Website Redesign
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#maintenance"
+                  <Link
+                    to="/services/website-maintenance"
                     className="block hover:text-orange-500"
                     onClick={() => setMenuOpen(false)}
                   >
                     🛠 Website Maintenance
-                  </a>
+                  </Link>
 
                 </div>
               )}
 
             </div>
 
-            <a
-              href="#projects"
+            <Link
+              to="/projects"
               className="block hover:text-orange-500"
               onClick={() => setMenuOpen(false)}
             >
               Projects
-            </a>
+            </Link>
 
-            <a
-              href="#blog"
+            <Link
+              to="/blog"
               className="block hover:text-orange-500"
               onClick={() => setMenuOpen(false)}
             >
               Blog
-            </a>
+            </Link>
 
             <button
               className="w-full border border-gray-500 py-3 rounded-md
