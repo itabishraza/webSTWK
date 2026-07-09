@@ -30,7 +30,7 @@ const HeroSection = () => {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
 
-            <a href="#projects">
+            <a href="/projects">
               <button className="bg-orange-500 px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition duration-300">
                 See My Work
               </button>

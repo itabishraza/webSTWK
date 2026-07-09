@@ -47,9 +47,11 @@ const HomePortfolio = () => {
 
           </div>
 
-          <button className="border border-gray-600 text-white px-6 py-3 rounded-lg hover:bg-orange-500 hover:border-orange-500 transition">
+          <a href="/projects">
+            <button className="border border-gray-600 text-white px-6 py-3 rounded-lg hover:bg-orange-500 hover:border-orange-500 transition">
             Explore More
           </button>
+          </a>
 
         </div>
 

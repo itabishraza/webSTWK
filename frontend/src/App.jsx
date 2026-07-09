@@ -8,11 +8,13 @@ import WebsiteRedesign from './Pages/services/WebsiteRedesign'
 import WebsiteMaintenance from './Pages/services/WebsiteMaintenance'
 import Projects from './Pages/Projects'
 import Blogs from './Pages/Blogs'
+import ScrollToTop from './components/common/ScrollToTop'
 
 
 const App = () => {
   return (
     <div>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/about' element={<About/>}/>

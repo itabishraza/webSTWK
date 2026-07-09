@@ -1,6 +1,5 @@
 import { useState } from "react";
 import logostwk from "../../assets/logostwk.svg";
-import { FiMenu, FiX, FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -8,7 +7,7 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <nav className=" top-0 left-0 w-full z-50 bg-[#22233b] text-white px-6 md:px-10">
+    <nav className=" fixed top-0 left-0 w-full z-50 bg-[#22233b] text-white px-6 md:px-10">
       <div className="max-w-7xl mx-auto">
 
         {/* Navbar */}
@@ -17,9 +16,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img
-             src={logostwk}
-             alt="STWK Logo"
-             className="h-14 md:h-16 object-contain"
+              src={logostwk}
+              alt="STWK Logo"
+              className="h-14 md:h-16 object-contain"
             />
 
             <h1 className="text-xl md:text-2xl font-space font-bold">
@@ -102,12 +101,12 @@ export default function Navbar() {
           </ul>
 
           {/* Desktop Contact Button */}
-          <button
-            className="hidden md:block border border-gray-500 px-8 py-3 rounded-md
-            hover:bg-orange-500 hover:border-orange-500 transition"
+          <a
+            href="/#contact"
+            className="hidden md:block border border-gray-500 px-8 py-3 rounded-md hover:bg-orange-500 hover:border-orange-500 transition"
           >
             CONTACT
-          </button>
+          </a>
 
           {/* Mobile Hamburger */}
           <button
@@ -123,7 +122,6 @@ export default function Navbar() {
           <div className="md:hidden mt-4 bg-[#2d2f4b] rounded-xl p-5 space-y-4">
 
             <Link
-            
               to="/about"
               className="block hover:text-orange-500"
               onClick={() => setMenuOpen(false)}
@@ -190,15 +188,18 @@ export default function Navbar() {
               Blog
             </Link>
 
-            <button
-              className="w-full border border-gray-500 py-3 rounded-md
-              hover:bg-orange-500 hover:border-orange-500 transition"
+            {/* Mobile Contact Button */}
+            <a
+              href="/#contact"
+              onClick={() => setMenuOpen(false)}
+              className="block w-full text-center border border-gray-500 py-3 rounded-md hover:bg-orange-500 hover:border-orange-500 transition"
             >
               CONTACT
-            </button>
+            </a>
 
           </div>
         )}
+
       </div>
     </nav>
   );
