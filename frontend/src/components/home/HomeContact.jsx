@@ -23,35 +23,47 @@ export default function HomeContact() {
               Get In Touch
             </h3>
 
-            <form className="space-y-5">
-
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full border border-[#E8C6B2] rounded-lg p-4 outline-none focus:border-[#EF6D58]"
-              />
-
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full border border-[#E8C6B2] rounded-lg p-4 outline-none focus:border-[#EF6D58]"
-              />
-
-              <textarea
-                rows="5"
-                placeholder="Tell me about your project..."
-                className="w-full border border-[#E8C6B2] rounded-lg p-4 outline-none resize-none focus:border-[#EF6D58]"
-              ></textarea>
-
-              <button
-                type="submit"
-                className="bg-[#EF6D58] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#E05A45] transition"
+            <form
+                name="contact"
+               method="POST"
+               data-netlify="true"
+               netlify
+               className="space-y-5"
               >
-                Send Message
-              </button>
+               {/* Required hidden input */}
+               <input type="hidden" name="form-name" value="contact" />
 
-            </form>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  className="w-full border border-[#E8C6B2] rounded-lg p-4 outline-none focus:border-[#EF6D58]"
+               />
 
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                  className="w-full border border-[#E8C6B2] rounded-lg p-4 outline-none focus:border-[#EF6D58]"
+                />
+
+               <textarea
+                 name="message"
+                 rows="5"
+                 placeholder="Tell me about your project..."
+                 required
+                 className="w-full border border-[#E8C6B2] rounded-lg p-4 outline-none resize-none focus:border-[#EF6D58]"
+               ></textarea>
+
+               <button
+                 type="submit"
+                 className="bg-[#EF6D58] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#E05A45] transition"
+               >
+                 Send Message
+               </button>
+              </form>
           </div>
 
           {/* Contact Info */}
