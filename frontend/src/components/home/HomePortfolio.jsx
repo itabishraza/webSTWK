@@ -1,5 +1,5 @@
 import React from "react";
-import Doctorproject from "../../assets/Doctorproject.png";
+import Doctorproject from "../../assets/prescripto.svg";
 import realtimechatapp from "../../assets/realtimechatapp.png";
 import { FiArrowUpRight } from "react-icons/fi";
 

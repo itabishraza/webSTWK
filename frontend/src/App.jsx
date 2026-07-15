@@ -24,6 +24,7 @@ const App = () => {
         <Route path="/services/website-maintenance" element={<WebsiteMaintenance />}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/blog' element={<Blogs/>}/>
+        
       </Routes>
     </div>
   )

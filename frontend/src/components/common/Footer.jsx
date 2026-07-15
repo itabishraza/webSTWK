@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
@@ -14,9 +16,11 @@ export default function Footer() {
 
           {/* Logo */}
           <div>
-            <h2 className="text-3xl font-bold inline-block">
-              webSTWK
-            </h2>
+            <Link to="/">
+              <h2 className="text-3xl font-bold inline-block cursor-pointer">
+                webSTWK
+              </h2>
+            </Link>
           </div>
 
           {/* Menu */}
@@ -27,39 +31,48 @@ export default function Footer() {
 
             <ul className="space-y-3 text-gray-300">
               <li>
-                <a
-                  href="#about"
+                <Link
+                  to="/about"
                   className="hover:text-white transition"
                 >
                   About
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#services"
+                <Link
+                  to="/services"
                   className="hover:text-white transition"
                 >
                   Services
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#projects"
+                <Link
+                  to="/projects"
                   className="hover:text-white transition"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/blog"
+                  className="hover:text-white transition"
+                >
+                  Blogs
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/#contact"
                   className="hover:text-white transition"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -71,35 +84,77 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-3 text-gray-300">
-              <li>Web Design</li>
-              <li>Frontend Development</li>
-              <li>Backend Development</li>
-              <li>API Integration</li>
+              <li>
+                <Link
+                  to="/services/web-development"
+                  className="hover:text-white transition"
+                >
+                  Web Development
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/services/website-redesign"
+                  className="hover:text-white transition"
+                >
+                  Website Redesign
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/services/website-maintenance"
+                  className="hover:text-white transition"
+                >
+                  Website Maintenance
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-white transition"
+                >
+                  Get Free Consultation
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Social Icons */}
           <div className="flex md:justify-end gap-4">
+
+            {/* Facebook */}
             <a
-              href="#"
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-[#ff7b61] flex items-center justify-center hover:scale-110 transition"
             >
               <FaFacebookF />
             </a>
 
+            {/* Twitter / X */}
             <a
-              href="#"
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-[#ff7b61] flex items-center justify-center hover:scale-110 transition"
             >
               <FaTwitter />
             </a>
 
+            {/* Instagram */}
             <a
-              href="#"
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-[#ff7b61] flex items-center justify-center hover:scale-110 transition"
             >
               <FaInstagram />
             </a>
+
           </div>
         </div>
 
@@ -108,19 +163,29 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
+
           <p>
-            © {new Date().getFullYear()} Tabish Raza. All Rights Reserved.
+            © {new Date().getFullYear()} <strong>webSTWK</strong>. All Rights Reserved.
           </p>
 
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition">
-              Terms of Use
-            </a>
 
-            <a href="#" className="hover:text-white transition ml-16 mr-28">
+            <Link
+              to="#"
+              className="hover:text-white transition"
+            >
+              Terms of Use
+            </Link>
+
+            <Link
+              to="#"
+              className="hover:text-white transition ml-16 mr-28"
+            >
               Privacy Policy
-            </a>
+            </Link>
+
           </div>
+
         </div>
 
       </div>
