@@ -24,10 +24,9 @@ export default function HomeContact() {
             </h3>
 
             <form
-                name="contact"
+               name="contact"
                method="POST"
                data-netlify="true"
-               netlify
                className="space-y-5"
               >
                {/* Required hidden input */}
