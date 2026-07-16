@@ -10,6 +10,7 @@ import MeetFounder from '../components/about/MeetFounder'
 import CTASection from '../components/about/CTASection'
 import Navbar from '../components/common/Navbar'
 import Footer from '../components/common/Footer'
+import Iconwhatsapp from '../components/common/Iconwhatsapp'
 
 const About = () => {
   return (
@@ -25,6 +26,7 @@ const About = () => {
       <MeetFounder/>
       <CTASection/>
       <Footer/>
+      <Iconwhatsapp />
     </div>
   )
 }

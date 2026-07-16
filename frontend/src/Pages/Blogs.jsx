@@ -9,6 +9,7 @@ import FeaturedArticle from "../components/blogs/FeaturedArticle";
 import BlogGrid from "../components/blogs/BlogGrid";
 import BlogCategories from "../components/blogs/BlogCategories";
 import Newsletter from "../components/blogs/Newsletter";
+import Iconwhatsapp from "../components/common/Iconwhatsapp";
 
 const Blogs = () => {
   return (
@@ -34,6 +35,7 @@ const Blogs = () => {
       <BlogCategories />
       <Newsletter />
       <Footer />
+      <Iconwhatsapp/>
     </>
   );
 };

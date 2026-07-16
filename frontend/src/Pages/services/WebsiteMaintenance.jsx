@@ -4,6 +4,7 @@ import WebsiteMaintenanceOverview from '../../components/services/websiteMainten
 import MaintenanceServices from '../../components/services/websiteMaintenance/MaintenanceServices'
 import Footer from '../../components/common/Footer'
 import Navbar from '../../components/common/Navbar'
+import Iconwhatsapp from '../../components/common/Iconwhatsapp'
 
 const WebsiteMaintenance = () => {
   return (
@@ -12,6 +13,7 @@ const WebsiteMaintenance = () => {
       <WebsiteMaintenanceBanner/>
       <WebsiteMaintenanceOverview/>
       <MaintenanceServices/>
+      <Iconwhatsapp />
       <Footer/>
     </div>
   )

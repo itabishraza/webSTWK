@@ -7,6 +7,7 @@ import Footer from "../components/common/Footer";
 import ProjectBanner from "../components/projects/ProjectBanner";
 import FeaturedProject from "../components/projects/FeaturedProject";
 import ProjectGrid from "../components/projects/ProjectGrid";
+import Iconwhatsapp from "../components/common/Iconwhatsapp";
 
 const Projects = () => {
   return (
@@ -29,6 +30,7 @@ const Projects = () => {
       <ProjectBanner />
       <FeaturedProject />
       <ProjectGrid />
+      <Iconwhatsapp />
       <Footer />
     </>
   );

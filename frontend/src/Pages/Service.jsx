@@ -10,6 +10,7 @@ import ServiceProcess from "../components/service/ServiceProcess";
 import WhyChooseService from "../components/service/WhyChooseService";
 import PricingCTA from "../components/service/PricingCTA";
 import FAQ from "../components/service/FAQ";
+import Iconwhatsapp from "../components/common/Iconwhatsapp";
 
 const Service = () => {
   return (
@@ -35,6 +36,7 @@ const Service = () => {
       <WhyChooseService />
       <PricingCTA />
       <FAQ />
+      <Iconwhatsapp />
       <Footer />
     </>
   );
